@@ -7,6 +7,19 @@
   <title>Document</title>
 </head>
 <body>
+  <h1 id="test">test</h1>
 
+  <ul>
+    <li><a style="color: blue;" href="#blue">蓝色</a></li>
+    <li><a style="color: green;" href="#green">绿色</a></li>
+    <li><a style="color: red;" href="#red">红色</a></li>
+  </ul>
+  <script>
+    var h1 = document.querySelector('#test')
+    window.onhashchange = function () {
+      var hash = location.hash.substr(1)
+      h1.style.color = hash
+    }
+  </script>
 </body>
 </html>
