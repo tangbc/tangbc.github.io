@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <foreignObject x="10" y="10" width="860" height="356">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <table style="font-size: 16px;border-spacing: 0; border-collapse: collapse; margin-bottom: 16px; line-height: 1.5;font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;">
+        <thead>
+          <tr style="background-color: #fff; border-top: 1px solid #c6cbd1;">
+            <th style="padding: 6px 13px; border: 1px solid #dfe2e5;"><strong>Prop</strong></th>
+            <th style="padding: 6px 13px; border: 1px solid #dfe2e5;"><strong>Type</strong></th>
+            <th style="padding: 6px 13px; border: 1px solid #dfe2e5;"><strong>Description</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: #fff; border-top: 1px solid #c6cbd1;">
+            <td style="white-space: nowrap; padding: 6px 13px; border: 1px solid #dfe2e5;"><code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">size</code></td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">Number</td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">Each item size, you don't have to know the accurate, just simply assign a <strong>estimate</strong> or <strong>average</strong> value.</td>
+          </tr>
+          <tr style="background-color: #fff; border-top: 1px solid #c6cbd1;">
+            <td style="white-space: nowrap; padding: 6px 13px; border: 1px solid #dfe2e5;"><code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">keeps</code></td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">Number</td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">How many items you are expecting the list to keep rendering in the real dom.</td>
+          </tr>
+          <tr style="background-color: #fff; border-top: 1px solid #c6cbd1;">
+            <td style="white-space: nowrap; padding: 6px 13px; border: 1px solid #dfe2e5;"><code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">data-key</code></td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">String</td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">The unique key get from <code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">dataSources</code> in each data object, its value <strong>must be unique</strong> in <code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">dataSources</code>, it used for identifying item size.</td>
+          </tr>
+          <tr style="background-color: #fff; border-top: 1px solid #c6cbd1;">
+            <td style="white-space: nowrap; padding: 6px 13px; border: 1px solid #dfe2e5;"><code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">data-sources</code></td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">Array</td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">The source array built for list, each array data must be an object and has an unique key for <code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">dataKey</code> property.</td>
+          </tr>
+          <tr style="background-color: #fff; border-top: 1px solid #c6cbd1;">
+            <td style="white-space: nowrap; padding: 6px 13px; border: 1px solid #dfe2e5;"><code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">data-component</code></td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">Component</td>
+            <td style="padding: 6px 13px; border: 1px solid #dfe2e5;">The render item component created / declared by vue, and it will use the data object in <code style="font-size:85%;padding:.2em .4em;background-color:rgba(27,31,35,.05);border-radius:3px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;">dataSources</code> as render props.</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </foreignObject>
+  <!-- ... -->
+</svg>
