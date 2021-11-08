@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <script src="https://unpkg.com/konva@8.2.3/konva.min.js"></script>
+  <meta charset="utf-8" />
+  <title>Konva Canvas Demo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 1em;
+      overflow: hidden;
+      background-color: #f0f0f0;
+    }
+    .konvajs-content {
+      border: 1px solid grey;
+    }
+  </style>
+</head>
+
+<body>
+<div id="icon">
+  <h3>img tag:</h3>
+  <img>
+</div>
+
+<div id="svg">
+  <h3>svg tag:</h3>
+  <?xml version="1.0" encoding="UTF-8"?>
+  <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <title>icon_text</title>
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-1540.000000, -706.000000)">
+              <g transform="translate(1540.000000, 582.000000)">
+                  <g transform="translate(0.000000, 124.000000)">
+                      <rect x="0" y="0" width="24" height="24" rx="2"></rect>
+                      <path d="M13.075,5 L18,18.5 L16.508,18.5 L15.048,14.499 L8.95,14.499 L7.491,18.5 L6,18.5 L10.923,5 L13.075,5 Z M11.9999856,6.14012761 L9.424,13.199 L14.574,13.199 L11.9999856,6.14012761 Z" fill="#81868F"></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+  </svg>
+</div>
+
+<h3>konva canvas:</h3>
+<div id="container"></div>
+
+<script>
+  const svgUrl = 'https://tangbc.github.io/others/icon_text.svg';
+
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+  // img tag show svg
+  document.querySelector('#icon img').setAttribute('src', svgUrl);
+  const stage = new Konva.Stage({
+    container: 'container',
+    width: 200,
+    height: 200,
+  });
+  const layer = new Konva.Layer();
+  stage.add(layer);
+
+  Konva.Image.fromURL(svgUrl, (image) => {
+    layer.add(image);
+  });
+
+</script>
+</body>
+</html>
