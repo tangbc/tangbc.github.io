@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_smartsheet_attribute_text</title>
+    <g id="P主页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="列表图标资源" transform="translate(-1540.000000, -706.000000)">
+            <g id="图标" transform="translate(1540.000000, 582.000000)">
+                <g id="编组" transform="translate(0.000000, 124.000000)">
+                    <rect id="矩形" x="0" y="0" width="24" height="24" rx="2"></rect>
+                    <path d="M13.075,5 L18,18.5 L16.508,18.5 L15.048,14.499 L8.95,14.499 L7.491,18.5 L6,18.5 L10.923,5 L13.075,5 Z M11.9999856,6.14012761 L9.424,13.199 L14.574,13.199 L11.9999856,6.14012761 Z" id="形状结合" fill="#81868F"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
